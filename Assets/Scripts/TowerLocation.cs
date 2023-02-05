@@ -11,7 +11,7 @@ public class TowerLocation : MonoBehaviour
     private void OnMouseUpAsButton()
     {
         // Build Tower above TowerLocation
-        GameObject newTower = (GameObject) Instantiate(towerPrefab);
+        GameObject newTower = Instantiate(towerPrefab);
         newTower.transform.position = transform.position + Vector3.up;
     }
 }
